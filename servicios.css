@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(212, 212, 212, 0.692);
+}
+header{
+    width: 100%;
+    height: 210px;
+    background: rgb(2, 0, 77);
+}
+.log{
+    float: right;
+    margin-top: 70px;
+    margin-right: 250px;
+ }
+ .log1{
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top: -0px;
+}
+.logos{
+    position: absolute;
+    top: 195px;
+    left: 0px;
+    width: 650px;
+    height: 150px;
+}
+.logos img{
+    width: 200px;
+    height:80px;
+    background: fixed;
+    background-size: cover;
+}
+.centro{
+    position: absolute;
+    top: 20px;
+    left: 1235px;
+    width: 100px;
+    height: 160px;
+}
+h1{
+    position: relative;
+    top: -40px;
+    text-align: center;
+    font-size: 30px;
+    height: 130px;
+    color: white;
+}
+h4{
+    position: relative;
+    top: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+.navigation{
+    float: right;
+    margin-right: 25px;
+    margin-top: -90px;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.4em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #00a199;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    
+}
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.service{
+    padding: 50px;
+}
+li{
+    margin: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+.service h2{
+    margin-bottom: 55px;
+    font-size: 40px;
+    color: rgb(40, 161, 197);
+}
+.service a{
+    position: relative;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 20px;
+
+}
+.service a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #00a199;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    
+}
+.service a:hover:after{
+    transform-origin: center;
+    transform: scaleX(1);
+}
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 290px;
+    background: rgb(32, 84, 100);
+    color: #fff;
+}
+footer p{
+    position: relative;
+    top: 70px;
+    padding: 0px;
+    margin: 10px;
+    margin-left: 100px;
+}
+.redes{
+    position: absolute;
+    top: 1110px;
+    left: 930px;
+}
+.redes img{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 100%;
+    margin: 5px;
+}
+.carrusel{
+    float: right;
+    margin-right: 45px ;
+    margin-top: -495px;
+    background-color: black;
+    border-radius: 10px;
+}
+section{
+    display: flex;
+    width: 670px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: 1.3s ease;
+    border-radius: 10px;
+    z-index: 99;
+}
+
+section img:hover{
+    cursor: pointer;
+    width: 360px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.ful-Img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.ful-Img img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.ful-Img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
